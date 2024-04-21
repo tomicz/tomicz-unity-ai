@@ -2,6 +2,11 @@ namespace Tomicz.AI.BehaviourTree
 {
     public class Tree
     {
-        private Node _rootNode;
+        public readonly Node RootNode;
+
+        public Tree(Node rootNode)
+        {
+            RootNode = rootNode;
+        }
     }
 }
