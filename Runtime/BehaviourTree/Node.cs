@@ -5,7 +5,9 @@ namespace Tomicz.AI.BehaviourTree
     public abstract class Node 
     {
         public Node ParentNode {get; private set;}
-        
+
+        private Dictionary<string, object> _data = new Dictionary<string, object>();
+
         protected List<Node> _children = new List<Node>();
         protected NodeStatus _nodeStatus;
 
