@@ -1,4 +1,4 @@
-namespace Tomicz.AI.BehaviourTree
+namespace Tomicz.AI.Tree
 {
     public enum NodeStatus
     {

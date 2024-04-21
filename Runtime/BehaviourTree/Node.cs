@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Tomicz.AI.BehaviourTree
+namespace Tomicz.AI.Tree
 {
     public abstract class Node 
     {

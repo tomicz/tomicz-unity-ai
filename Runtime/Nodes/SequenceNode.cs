@@ -1,4 +1,4 @@
-using Tomicz.AI.BehaviourTree;
+using Tomicz.AI.Tree;
 
 namespace Tomicz.AI.Nodes
 {

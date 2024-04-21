@@ -1,10 +1,10 @@
-namespace Tomicz.AI.BehaviourTree
+namespace Tomicz.AI.Tree
 {
-    public abstract class Tree
+    public abstract class BehaviourTree
     {
         public readonly Node RootNode;
 
-        public Tree(Node rootNode)
+        public BehaviourTree(Node rootNode)
         {
             RootNode = rootNode;
         }
