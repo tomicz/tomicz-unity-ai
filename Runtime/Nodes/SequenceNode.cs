@@ -24,6 +24,8 @@ namespace Tomicz.AI.Nodes
                         continue;
                 }
             }
+
+            _nodeStatus = NodeStatus.Failure;
             return _nodeStatus;
         }
     }
