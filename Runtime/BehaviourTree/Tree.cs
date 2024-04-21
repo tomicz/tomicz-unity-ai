@@ -8,5 +8,15 @@ namespace Tomicz.AI.BehaviourTree
         {
             RootNode = rootNode;
         }
+
+        public abstract Node Init();
+
+        public void Tick()
+        {
+            if(RootNode != null)
+            {
+                RootNode.Tick();
+            }
+        }
     }
 }
