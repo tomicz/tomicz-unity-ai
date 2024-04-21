@@ -2,7 +2,13 @@ namespace Tomicz.AI.BehaviourTree
 {
     public class Node 
     {
-       public Node Right {set; get;}
-       public Node Left {set; get;}
+       public readonly Node Right;
+       public readonly Node Left; 
+
+       public Node(Node rightNode, Node leftNode)
+       {
+            Right = rightNode;
+            Left = leftNode;
+       }
     }
 }
