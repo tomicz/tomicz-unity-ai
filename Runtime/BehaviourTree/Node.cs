@@ -1,16 +1,23 @@
+using System.Collections.Generic;
+
 namespace Tomicz.AI.BehaviourTree
 {
     public class Node 
     {
-        public readonly Node Right;
-        public readonly Node Left; 
-
+        public Node ParentNode {get; private set;}
+        
+        protected List<Node> _children = new List<Node>();
         protected NodeStatus _nodeStatus;
 
-        public Node(Node rightNode, Node leftNode)
+        public Node(Node parentNode)
         {
-            Right = rightNode;
-            Left = leftNode;
+            ParentNode = parentNode;
+            
+            foreach(var node in _children)
+            {
+                node.ParentNode = this;
+                _children.Add(node);
+            }
         }
     }
 }
