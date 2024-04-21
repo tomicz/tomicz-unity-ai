@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace Tomicz.AI.BehaviourTree
 {
-    public class Node 
+    public abstract class Node 
     {
         public Node ParentNode {get; private set;}
         
@@ -19,5 +19,7 @@ namespace Tomicz.AI.BehaviourTree
                 _children.Add(node);
             }
         }
+
+        public abstract NodeStatus Tick();
     }
 }
